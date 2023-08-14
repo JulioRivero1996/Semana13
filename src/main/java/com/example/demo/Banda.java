@@ -22,9 +22,9 @@ public class Banda {
 	public boolean equals(Object o) {
 		if (this == o) return true;
 		if (o == null || getClass() != o.getClass()) return false;
-		Banda banda = (Banda) o;
-		return Objects.equals(id, banda.id) &&
-			Objects.equals(nombre, banda.nombre);
+		Banda oo = (Banda) o;
+		return Objects.equals(id, oo.id) &&
+			Objects.equals(nombre, oo.nombre);
 	}
 
 	@Override
