@@ -42,12 +42,8 @@ class PageHome extends React.Component {
 						<Titulo entidad="Banda" />
 						<BandaList bandas={this.state.bandas} />
 						<br />
-						<Link to="/nueva-banda">Nuevo Banda</Link>
-					</div>
-
-					
-
-					
+						<Link to="/nueva-banda">Nueva Banda</Link>
+					</div>				
 				</div>
 				
 			</>
@@ -160,6 +156,9 @@ class Banda extends React.Component {
 		return (
 			<tr>
 				<td>{this.props.banda.nombre}</td>
+				<td>
+					<Link to={`/ver-banda/${id}`}>Ver</Link>
+				</td>
 			</tr>
 		)
 	}

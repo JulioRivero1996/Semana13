@@ -33,13 +33,13 @@ public class Banda {
 		return Objects.hash(id, nombre);
 	}
 
-	// @Override
-	// public String toString() {
-	// 	return "Instrumento{" +
-	// 		"id=" + id +
-	// 		", nombre='" + nombre + '\'' +
-	// 		'}';
-	// }
+	@Override
+	public String toString() {
+	 	return "Banda{" +
+	 		"id=" + id +
+	 		", nombre='" + nombre + '\'' +
+			'}';
+	}
 
 	public Long getId() {
 		return id;
